@@ -1,0 +1,52 @@
+@mixin header-txt {
+  font-family: "Bold";
+  font-size: 0.7rem;
+  padding: 5px;
+  color: #fff;
+}
+
+@mixin hero-text {
+  font-family: "Bold";
+  font-size: $hero-txt;
+  background: $red-text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin h3-text {
+  font-family: "Bold";
+  font-size: $h3-caps-txt;
+  text-decoration: none;
+  color: $regular-color;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+@mixin hover {
+  color: $accent-color;
+  cursor: grab;
+  transition: 0.5s;
+}
+@mixin h4-text {
+  font-family: "Bold";
+  font-size: 0.7rem;
+}
+@mixin grey-s-text {
+  font-family: "Bold";
+  font-size: $smaller-txt;
+  letter-spacing: 1px;
+  color: $text-color;
+  text-transform: uppercase;
+}
+@mixin hr-grey {
+  height: 4px;
+  background: $separator-color;
+  border: none;
+}
+@mixin blue-button {
+  font-family: "Bold";
+  font-size: $p-txt;
+  background: $regular-color;
+  box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+  color: white;
+  border: none;
+  border-radius: 12px;
+}
