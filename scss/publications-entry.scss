@@ -1,0 +1,140 @@
+@import "./mixins";
+@import "./normalize";
+@import "./variables";
+body {
+  // background-color: $accent-color;
+}
+.header {
+  //   background-color: $main-color;
+  &__lng {
+    color: $text-color;
+    &_active {
+      color: white;
+    }
+    &:hover {
+      color: white;
+      transition: 0.8s;
+    }
+  }
+  &__adress {
+    color: $text-color;
+  }
+  &__number {
+    color: $text-color;
+  }
+  &__link {
+    color: $regular-color;
+    &_active {
+      color: $accent-color;
+      text-decoration: underline;
+    }
+  }
+  .mobile__logo {
+    @media screen and (max-width: 620px) {
+      max-width: 70%;
+    }
+  }
+  &-mobile__menu {
+    background: $bg-color;
+  }
+  .hamburger-menu {
+    &__btn > span,
+    &__btn > span::before,
+    &__btn > span::after {
+      background-color: $clients-txt;
+    }
+  }
+}
+.container {
+  @media screen and (min-width: 1440px) {
+    width: 70%;
+  }
+}
+.publication {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+  }
+  &__img {
+    padding: 30px 0;
+    img {
+      max-width: 100%;
+    }
+  }
+  &__h2 {
+    font-family: "Bold";
+    font-size: $h2-txt;
+    color: $clients-txt;
+    padding-bottom: 15px;
+    @media screen and (max-width: 620px) {
+      font-size: $h3-txt;
+    }
+  }
+  &__h4 {
+    @include grey-s-text;
+    padding-bottom: 30px;
+  }
+  &__hr {
+    @include hr-grey;
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-family: "Regular";
+    font-size: $p-txt;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 30px;
+    @media screen and (max-width: 620px) {
+      font-size: $smaller-txt;
+    }
+    &-list {
+      padding-bottom: 15px;
+    }
+    &_accent {
+      @include hero-text;
+      padding-bottom: 30px;
+      @media screen and (max-width: 620px) {
+        font-size: $h3-txt;
+      }
+    }
+    span {
+      font-family: "Bold";
+      color: $accent-color;
+    }
+  }
+  &__title {
+    font-family: "Bold";
+    font-size: $h3-txt;
+    font-weight: 700;
+    line-height: 26px;
+    color: $footer-txt-color;
+    padding-bottom: 15px;
+    @media screen and (max-width: 620px) {
+      font-size: $h4-txt;
+    }
+  }
+  &__screen {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      color: $text-color;
+    }
+  }
+  &__apps {
+    display: flex;
+    gap: 10px;
+    img {
+      background-color: $bg-color;
+      border: solid 9px $bg-color;
+      border-radius: 12px;
+      &:hover {
+        background-color: $text-color;
+        border-color: $text-color;
+        transition: 0.5s;
+      }
+    }
+  }
+}

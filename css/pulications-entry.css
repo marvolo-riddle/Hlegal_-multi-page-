@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "Regular";
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+.container {
+  width: 83%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 91%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 88%;
+  }
+}
+@media screen and (max-width: 854px) {
+  .container {
+    width: 84%;
+  }
+}
+
+.header__lng {
+  color: #b3b3ba;
+}
+.header__lng_active {
+  color: white;
+}
+.header__lng:hover {
+  color: white;
+}
+.header__adress {
+  color: #b3b3ba;
+}
+.header__number {
+  color: #b3b3ba;
+}
+.header__link {
+  color: #24a3ff;
+}
+.header__link_active {
+  color: #f0145a;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 70%;
+  }
+}
+
+.publication__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+.publication__img {
+  padding: 30px 0;
+}
+.publication__img img {
+  max-width: 100%;
+}
+.publication__h2 {
+  font-family: "Bold";
+  font-size: 1.8rem;
+  color: #323264;
+  padding-bottom: 15px;
+}
+.publication__h4 {
+  font-family: "Bold";
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: #b3b3ba;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+.publication__hr {
+  height: 4px;
+  background: #e6e6f0;
+  border: none;
+  margin-bottom: 30px;
+}
+.publication__text {
+  font-family: "Regular";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  padding-bottom: 30px;
+}
+.publication__text-list {
+  padding-bottom: 15px;
+}
+.publication__text_accent {
+  font-family: "Bold";
+  font-size: 2.3rem;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 30px;
+}
+.publication__text span {
+  font-family: "Bold";
+  color: #f0145a;
+}
+.publication__title {
+  font-family: "Bold";
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 26px;
+  color: #46466e;
+  padding-bottom: 15px;
+}
+.publication__screen {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.publication__screen p {
+  color: #b3b3ba;
+}
+.publication__apps {
+  display: flex;
+  gap: 10px;
+}
+.publication__apps img {
+  background-color: #f5f5fa;
+  border: solid 9px #f5f5fa;
+  border-radius: 12px;
+}
+
+/*# sourceMappingURL=pulications-entry.css.map */

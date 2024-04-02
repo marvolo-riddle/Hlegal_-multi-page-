@@ -5,6 +5,13 @@
   color: #fff;
 }
 
+@mixin header-txt-light-theme {
+  font-family: "Bold";
+  font-size: 0.7rem;
+  padding: 5px;
+  color: $text-color;
+}
+
 @mixin hero-text {
   font-family: "Bold";
   font-size: $hero-txt;
