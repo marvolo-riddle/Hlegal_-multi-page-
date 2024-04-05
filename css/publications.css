@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "Regular";
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+.container {
+  width: 83%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 91%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 88%;
+  }
+}
+@media screen and (max-width: 854px) {
+  .container {
+    width: 84%;
+  }
+}
+
+.publications__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.publications__switch {
+  display: flex;
+  background-color: #ededf7;
+  padding: 2px;
+  margin: 32px;
+  border-radius: 12px;
+}
+.publications__switch-wrapper {
+  padding: 10px 30px;
+  border-radius: 12px;
+  font-family: "Bold";
+  font-size: 1rem;
+  color: #323264;
+  font-weight: 700;
+}
+.publications__switch-wrapper_active {
+  background-color: #f5f5fa;
+}
+.publications__switch-wrapper:hover {
+  background-color: white;
+  cursor: grab;
+  transition: 0.5s;
+}
+@media screen and (max-width: 854px) {
+  .publications__card {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 610px) {
+  .publications__card {
+    width: 80%;
+  }
+}
+.publications__btn {
+  padding: 18px 30px;
+  background-color: #24a3ff;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+.publications__btn:hover {
+  box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5019607843);
+}
+.publications__btn a {
+  text-decoration: none;
+  font-family: "Bold";
+  font-size: 1rem;
+  color: white;
+}
+
+/*# sourceMappingURL=publications.css.map */

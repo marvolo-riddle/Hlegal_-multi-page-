@@ -1,0 +1,56 @@
+@import "./mixins";
+@import "./normalize";
+@import "./variables";
+.publications {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__switch {
+    display: flex;
+    background-color: $bg-alt-color;
+    padding: 2px;
+    margin: 32px;
+    border-radius: 12px;
+    &-wrapper {
+      padding: 10px 30px;
+      border-radius: 12px;
+      font-family: "Bold";
+      font-size: $p-txt;
+      color: $clients-txt;
+      font-weight: 700;
+      &_active {
+        background-color: $bg-color;
+      }
+      &:hover {
+        background-color: white;
+        cursor: grab;
+        transition: 0.5s;
+      }
+    }
+  }
+  &__card {
+    @media screen and (max-width: 854px) {
+      width: 40%;
+    }
+    @media screen and (max-width: 610px) {
+      width: 80%;
+    }
+  }
+  &__btn {
+    padding: 18px 30px;
+    background-color: $regular-color;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    &:hover {
+      box-shadow: 0px 0px 20px 0px #24a3ff80;
+    }
+    a {
+      text-decoration: none;
+      font-family: "Bold";
+      font-size: $p-txt;
+      color: white;
+    }
+  }
+}
