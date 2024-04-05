@@ -636,6 +636,13 @@
     font-family: "Bold";
     font-size: $p-txt;
     color: $regular-color;
+    a {
+      text-decoration: none;
+      color: $regular-color;
+      &:hover {
+        color: $clients-txt;
+      }
+    }
   }
   &__h4 {
     @include grey-s-text;

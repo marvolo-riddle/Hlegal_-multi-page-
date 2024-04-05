@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "Regular";
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+.container {
+  width: 83%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 91%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 88%;
+  }
+}
+@media screen and (max-width: 854px) {
+  .container {
+    width: 84%;
+  }
+}
+
+.about__container {
+  display: flex;
+  padding: 60px 0;
+}
+@media screen and (max-width: 768px) {
+  .about__container {
+    flex-direction: column;
+  }
+}
+.about__text-wrapper {
+  padding-right: 30px;
+  width: 70%;
+}
+@media screen and (max-width: 1024px) {
+  .about__text-wrapper {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__text-wrapper {
+    width: 100%;
+  }
+}
+.about__text-wrapper div {
+  display: flex;
+  flex-direction: column;
+}
+.about__title {
+  font-family: "Bold";
+  font-size: 2.3rem;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about__text {
+  font-family: "Regular";
+  font-size: 1.1rem;
+  line-height: 30px;
+}
+.about__calculation {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding-left: 40px;
+  gap: 40px;
+  border-left: solid 4px #e6e6f0;
+}
+@media screen and (max-width: 1024px) {
+  .about__calculation {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__calculation {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+.about__calculation_wrapper div {
+  display: flex;
+  gap: 6px;
+  padding-bottom: 10px;
+}
+.about__img {
+  max-width: 100%;
+}
+
+.achievements {
+  background-color: #f5f5fa;
+  display: flex;
+  flex-direction: column;
+}
+.achievements__partners {
+  display: flex;
+  gap: 40px;
+}
+.achievements__partners_svg {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+}
+.achievements__partners_svg img {
+  max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .achievements__partners_svg {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .achievements__partners_svg-mobile {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.paginator {
+  background-color: #f5f5fa;
+  padding: 30px 0;
+}
+.paginator-mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .paginator-mobile {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */
